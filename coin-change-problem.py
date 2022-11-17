@@ -40,15 +40,14 @@ def greedy(exchange):
 
 if __name__ == "__main__":
     coins = [1, 2, 5, 10]
-    sum = int(input("Enter Rupee amount to change in coin: "))
-    print("========= Brute Force Solution ==========")
+    sum = int(input("Enter Rupee amount to change in coin: "))    
     print(f" Coins : {coins}\n Sum : {sum}")
+    print("========= Brute Force Solution ==========")
     begin = time.perf_counter()
     print(" Minimum coins:",get_nums_of_coins(coins,sum))
     end = time.perf_counter()
     print(" Time execution : ",end-begin)
     print("\n=========== Greedy Solution =============")
-    print(f" Coins : {coins}\n Sum : {sum}")
     begin = time.perf_counter()
     greedy(sum)
     end = time.perf_counter()
